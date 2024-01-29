@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+:root{
+    --font: 'Libre Franklin', sans-serif;
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Blue: hsl(223, 87%, 63%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+html,body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+body{
+    padding: 3rem;
+}
+.card{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start ;
+}
+.topDiv{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.DescDiv{
+    width: 100%;
+}
+.logo{
+    width: 60px;
+    margin-bottom: 1.5rem;
+}
+.title{
+    font-weight: 100;
+    color: var(--Gray);
+    margin-bottom: 0.5rem;
+}
+span{
+    font-weight: 700;
+    color: var(--VeryDarkBlue);
+}
+.desc{
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 1.5rem;    
+}
+.mailDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem ;
+    gap: 1rem;
+}
+.input{
+    width:90% ;
+    padding: 12px 12px 12px 20px;
+    border: 1px solid var(--Blue);
+    border-radius: 1.5rem;
+    font-weight: 600;
+}
+.btn{
+    width: 90%;
+    height: 50px;
+    padding: 0px ;
+    border: none;
+    background-color: var(--Blue);
+    color: white;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    cursor: pointer ;
+    box-shadow: 0 3px 5px  hsla(223, 74%, 62%, 0.374);
+    margin-top: 8px;
+}
+.bottomDiv{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.mainImg{
+    width: 100%;
+}
+.img1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 7px;
+    border: 1px solid var(--PaleBlue);
+    cursor: pointer;
+    fill:#74C0FC;
+}
+.errordiv{
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0 0rem ;
+    /* display: none; */
+}
+.error{
+    color: var(--LightRed);
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: start;
+    display: none;
+    margin-top: 0.5rem;
+    padding-left:2rem ;
+}
+.img2,.img3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 7px;
+    border: 1px solid var(--PaleBlue);
+    cursor: pointer;
+    fill:#74C0FC;
+}
+.img1:hover,.img2:hover,.img3:hover{
+    fill: url(#ffffff);
+    background-color: var(--Blue);
+}
+.btn:hover{
+    background-color:hsla(223, 87%, 63%, 0.831) ;
+    border: 2px solid var(--Blue);
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    gap: 1rem;
+}
+.socialMedia{
+    display: flex;
+    gap: 1rem;
+}
+
+.copyRight{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--Gray);
+}
+.errorBorder{
+    border: 2px solid var(--LightRed);
+}
+.correctBorder{
+    border: 2px solid green;
+}
+
+@media screen and (max-width:650px) {
+    html,body{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    body{
+        padding: 3rem 1rem;
+    }
+    .card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start ;
+    }
+    .topDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .DescDiv{
+        width: 100%;
+    }
+    .logo{
+        width: 50px;
+        margin-bottom: 1.5rem;
+    }
+    .title{
+        font-weight: 100;
+        color: var(--Gray);
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem ;
+    }
+    span{
+        font-weight: 700;
+        color: var(--VeryDarkBlue);
+    }
+    .desc{
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: var(--VeryDarkBlue);
+        margin-bottom: 1.5rem;    
+    }
+    .mailDiv{
+        width: 100%;
+        display: flex;
+        padding: 0 0rem ;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .input{
+        width:90% ;
+        padding: 12px 12px 12px 20px;
+        border: 1px solid var(--Blue);
+        border-radius: 1.5rem;
+        font-weight: 600;
+    }
+    .btn{
+        width: 90%;
+        height: 50px;
+        padding: 0px ;
+        border: none;
+        background-color: var(--Blue);
+        color: white;
+        font-weight: 600;
+        border-radius: 1.5rem;
+        cursor: pointer ;
+        box-shadow: 0 3px 5px  hsla(223, 74%, 62%, 0.374);
+        margin-top: 8px;
+    }
+    .bottomDiv{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+    }
+    .errordiv{
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0 0rem ;
+        /* display: none; */
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
